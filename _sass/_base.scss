@@ -1,0 +1,22 @@
+$header-font-family: 'Cabin', sans-serif;
+$primary-color: #699;
+
+@import "./foundation/normalize";
+@import "./foundation/foundation";
+
+body { font-size: 18px; font-family: 'Cabin' sans-serif; }
+header h1 {
+  margin-top: 1em;
+  text-transform: uppercase;
+  color: $primary-color;
+  font-weight: 600;
+  span { color: $black; }
+}
+
+$metric: 30px;
+h2.subheader { margin-left: $metric * 1; }
+h3.subheader { margin-left: $metric * 2; }
+
+h1 + ul { margin-left: $metric * 1; }
+h2 + ul { margin-left: $metric * 2; }
+h3 + ul { margin-left: $metric * 3; }
